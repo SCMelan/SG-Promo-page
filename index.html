@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Star Guardins will protect us</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/favicon_io/favicon-32x32.png" >
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <button class="jewels" type="submit" onclick="reload()">
+                <img src="img/Jewejs/Jewel10.png"  alt="Jewel" class="jewel1">
+            </button>           
+            <div class="allHeaderText">
+                <button class="btntext" onclick=goToTeams()>
+                    <p>Команды</p>
+                </button>
+                <button class="btntext"  onclick=goToHistory()>
+                    <p>Хронология событий</p>
+                </button>
+                <button class="btntext" id="stars"  >
+                    <p onclick=starspage()>Звёзды</p>
+                </button>
+                <button class="btntext">
+                    <p onclick=goToEnemys()>Противники</p>
+                </button>
+            </div>
+        </div>
+        <main>
+            <div class="BoxInfo">
+                <div class="box1">
+                    <div>
+                        <p class="Info"><span class="StrongText">ФИО :</span> Антонов Кирилл Юрьевич</p>
+                        <p class="Info"><span class="StrongText">Возраст :</span> 22</p>
+                        <p class="Info"><span class="StrongText">О проекте :</span> Данный проект был реализован в рамках обучения <span class="HTML">HTML</span>, <span class="CSS">CSS</span>  и <span class="JS"> JS</span>. В процессе обучения я хотел создать небольшой промо-сайт по любимой серии скинов из игры League of Legnds.  Получая новую информацию о способах реализации различных элементов я пытался сразу попробовать эти способы на практике. В процессе разработки я познакомился со множеством инструментов разработки сайта, такими как : псевдоклассы, передача параметров от родительского компонента, различными единицами расчёта размеров компонента, градиентами, написанием простых функций и многим другим. Как итог у меня получился небольшой сайт. </p>
+                        <p class="Info"><span class="StrongText">E-Mail :</span> SCMelan@gmail.com</p>
+                    </div>
+                </div>
+                <div class="BoxForText">
+
+                </div>
+            </div>
+        </main>
+        <footer class="footerBox">
+            <p class="footerText">Created by ShadowCherry</p>
+        </footer>
+    </div>
+    <script defer src="sc.js" type="text/javascript"></script>
+</body>
+
+</html>

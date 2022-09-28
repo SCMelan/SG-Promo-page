@@ -1,0 +1,1101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+
+.container {
+    background-image: url('img/Back.jpg');
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.Jewel {
+    background: none;
+    border: none;
+    height: 150px;
+}
+
+.JewelSet {
+    width: 150px;
+    transition: 0.5s;
+    margin-top: 20px;
+}
+
+.JewelSet:hover {
+    filter: drop-shadow(0 0 30px rgb(227, 135, 220));
+    transform: scale(1.2);
+}
+
+.nav {
+    width: 1700px;
+    display: flex;
+    margin-top: 30px;
+}
+
+.nav li {
+    flex-grow: 1;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.nav li:first-child:hover {
+    filter: drop-shadow(0 0 20px pink);
+}
+
+.nav li:nth-child(2):hover {
+    filter: drop-shadow(0 0 20px rgb(145, 9, 32));
+}
+.nav li:nth-child(3):hover {
+    filter: drop-shadow(0 0 20px rgb(70, 2, 125));
+}
+.nav li:nth-child(4):hover {
+    filter: drop-shadow(0 0 20px rgb(255, 154, 171));
+}
+.nav li:last-child:hover {
+    filter: drop-shadow(0 0 20px rgb(18, 184, 206));
+}
+
+.nav a {
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+.nav li:hover {
+    transform: scale(1.2);
+}
+
+.active {
+    border: 3px solid rgb(255, 192, 203, 0.5);
+    border-radius: 50%;
+    background: rgb(255, 255, 255, 0.3);
+    border-radius: 50%;
+}
+
+.displayFlex {
+    margin-top: 15px;
+    max-height: 700px;
+}
+
+.hide {
+    display: none;
+}
+
+.TeamAhri {
+    width: 1620px;
+    height: 740px;
+    margin-left: 150px;
+    display: flex;
+}
+
+.Ahri {
+    display: flex;
+}
+
+.AhriShow {display: none;}
+
+.AhriBox {
+    background-image: url(img/SG/5b77edece2eafCo.jpg);
+    background-size: 100%;
+    width: 400px;
+    height: 592px;
+    transition: 0.25s;
+    margin: 70px 0px 0px 50px;
+    filter: drop-shadow(0 0 20px pink);
+    border: none;
+}
+.AhriBox:hover {
+    transform: scale(1.2);
+    border: 2px solid pink;
+}
+
+.btnAhriBox {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    background: url(img/SVG/X.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: none;
+    transition: 0.2s;
+    left: -100px;
+}
+
+.btnAhriBox:hover, .ShowAhriBio:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 20px pink);
+}
+
+.btnAhriBox:before, .btnAhriBox:after {
+    background-color: rgb(255, 255, 255);
+}
+
+.ShowAhriBio {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    background: url(img/SVG/ImgIco.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: none;
+    transition: 0.2s;
+    left: -170px;
+    bottom: -100px;
+}
+
+
+.AhriInfo {
+    background-color: gray;
+    width: 1620px;
+    height: 740px;
+    margin-left: 150px;
+    position: absolute;
+    display: none;
+}
+
+.AhrisHistory {
+    z-index: 50;
+    background: rgba(0, 0, 0, .7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+}
+
+.AhriHistoryBox {
+    width: 80em;
+    margin: 0 auto;
+    height: 40em;
+    background-color: white;
+    background-image: url(img/SG/AhriHD.jpg);
+    background-size: 100%;
+    filter: drop-shadow(0 0 20px pink);
+}
+
+.AhriHistoryBox p {
+    text-align: center;
+    font-size: 45px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 50px;
+}
+
+.GrayBox {
+    width: 80em;
+    margin: 0 auto;
+    height: 40em;
+    background:  rgba(46, 46, 46, 0.7);
+    position: absolute;
+}
+
+.TeamAhriChapter1, .TeamAhriChapter2 {
+    margin: 70px 0px 0px 120px;
+}
+
+.MFBox {
+    background-image: url(img/SG/MissFortuneCO.jpg);
+    background-size: 104%;
+    width: 450px;
+    height: 220px;
+    background-repeat: no-repeat;
+    margin: 40px 0px 50px 0px;
+    filter: drop-shadow(0 0 20px rgb(226, 111, 18));
+    transition: 0.25s;
+    border: none;
+}
+.MFBox:hover {
+    transform: scale(1.2);
+    border: 2px solid rgb(226, 111, 18);
+}
+
+.MFShow, .SyndraShow, .SorakaShow, .EzrealShow, .JannaShow, .LuluShow, .LuxShow, .PoppyShow, .JinxShow, .XayahShow, .SennaShow, .SeraphineShow, .OriannaShow, .GwenShow, .RakanShow, .RellShow, .QuinnShow, .NeekoShow, .SonaShow, .TaliyahShow, .EkkoShow, .NilahShow, .AkaliShow, .KaiSaShow {display: none;}
+
+.MFInfo, .SyndraInfo, .SorakaInfo, .EzrealInfo, .JannaInfo, .LuluInfo, .LuxInfo, .PoppyInfo, .JinxInfo, .XayahInfo, .SennaInfo, .SeraphineInfo, .OriannaInfo, .GwenInfo, .RakanInfo, .RellInfo, .QuinnInfo, .NeekoInfo, .SonaInfo, .TaliyahInfo, .EkkoInfo, .NilahInfo, .AkaliInfo, .KaiSaInfo {
+    background-color: gray;
+    width: 1620px;
+    height: 740px;
+    margin-left: 150px;
+    position: absolute;
+    display: none;
+}
+
+.MFHistory, .SyndraHistory, .SorakaHistory, .EzrealHistory, .JannaHistory, .LuluHistory, .LuxHistory, .PoppyHistory, .JinxHistory, .XayahHistory, .SennaHistory, .SeraphineHistory, .OriannaHistory, .GwenHistory, .RakanHistory, .RellHistory, .QuinnHistory, .NeekoHistory, .SonaHistory, .TaliyahHistory, .EkkoHistory, .NilahHistory, .AkaliHistory, .KaiSaHistory {
+    z-index: 50;
+    background: rgba(0, 0, 0, .7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+}
+
+.MFHistoryBox {
+    width: 80em;
+    margin: 0 auto;
+    height: 40em;
+    background-color: white;
+    background-image: url(img/SG/MissFortuneHD.jpg);
+    background-size: 100%;
+    filter: drop-shadow(0 0 20px rgb(226, 111, 18));
+}
+
+.MFHistoryBox p {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 30px;
+}
+
+.SyndraBox {
+    background-image: url(img/SG/SyndraCo.jpg);
+    background-size: 100%;
+    width: 450px;
+    height: 220px;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0 0 20px rgb(92, 9, 160));
+    transition: 0.25s;
+    border: none;
+}
+.SyndraBox:hover {
+    transform: scale(1.2);
+    border: 2px solid rgb(92, 9, 160);
+}
+
+.SyndraHistoryBox {
+    width: 80em;
+    margin: 0 auto;
+    height: 40em;
+    background-color: white;
+    background-image: url(img/SG/SyndraHD.jpg);
+    background-size: 100%;
+    filter: drop-shadow(0 0 20px rgb(92, 9, 160));
+}
+
+.SyndraHistoryBox p {
+    text-align: center;
+    font-size: 45px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 30px;
+}
+
+.SorakaBox {
+    background-image: url(img/SG/SorakaCO.jpg);
+    background-size: 100%;
+    width: 450px;
+    height: 220px;
+    background-repeat: no-repeat;
+    margin: 40px 0px 50px 0px;
+    filter: drop-shadow(0 0 20px rgb(53, 235, 150));
+    transition: 0.25s;
+    border: none;
+}
+.SorakaBox:hover {
+    transform: scale(1.2);
+    border: 2px solid rgb(53, 235, 150);
+}
+
+.SorakaHistoryBox {
+    width: 80em;
+    margin: 0 auto;
+    height: 40em;
+    background-color: white;
+    background-image: url(img/SG/SorakaHD.jpg);
+    background-size: 100%;
+    filter: drop-shadow(0 0 20px rgb(53, 235, 150));
+}
+
+.SorakaHistoryBox p {
+    text-align: center;
+    font-size: 42px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 30px;
+}
+
+.EzrealBox {
+    background-image: url(img/SG/EzrealCo.jpg);
+    background-size: 100%;
+    width: 450px;
+    height: 220px;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0 0 20px rgb(31, 224, 238));
+    transition: 0.25s;
+    border: none;
+}
+.EzrealBox:hover {
+    transform: scale(1.2);
+    border: 2px solid rgb(31, 224, 238);
+}
+
+.EzrealHistoryBox {
+    width: 80em;
+    margin: 0 auto;
+    height: 40em;
+    background-color: white;
+    background-image: url(img/SG/EzrealHD.jpg);
+    background-size: 100%;
+    filter: drop-shadow(0 0 20px rgb(31, 224, 238));
+}
+
+.EzrealHistoryBox p {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 30px;
+}
+
+.teamLuxe {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.LuxBox {
+    background-image: url(img/SG/TeamLux/LuxCard.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: none;
+    width: 400px;
+    height: 600px;
+    transition: 0.25s;
+    filter: drop-shadow(0 0 20px #fb74d0);
+    padding: 0;
+}
+
+.LuxBox:hover {
+    transform: scale(1.2);
+    border: 2px solid #fb74d0;
+}
+
+.LuxHistoryBox {
+    width: 80em;
+    margin: 0 auto;
+    height: 40em;
+    background-color: white;
+    background-image: url(img/SG/TeamLux/Lux.jpg);
+    background-size: 100%;
+    filter: drop-shadow(0 0 20px #fb74d0);
+}
+
+.LuxHistoryBox p {
+    text-align: center;
+    font-size: 45px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 30px;
+}
+
+.teamLuxChapter1 {
+    padding: 50px;
+}
+
+.JannaBox {
+    background-image: url(img/SG/TeamLux/JannaCard.jpg);
+    background-size: 100%;
+    width: 450px;
+    height: 220px;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0 0 20px #5e17a5);
+    transition: 0.25s;
+    border: none;
+    margin-bottom: 25px;
+}
+.JannaBox:hover {
+    transform: scale(1.2);
+    border: 2px solid #5e17a5;
+}
+.JannaHistoryBox {
+    width: 80em;
+    margin: 0 auto;
+    height: 40em;
+    background-color: white;
+    background-image: url(img/SG/TeamLux/JannaHD.jpg);
+    background-size: 100%;
+    filter: drop-shadow(0 0 20px #5e17a5);
+}
+
+.JannaHistoryBox p {
+    text-align: center;
+    font-size: 48px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 30px;
+}
+.LuluBox {
+    background-image: url(img/SG/TeamLux/LuluCard.jpg);
+    background-size: 100%;
+    width: 450px;
+    height: 220px;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0 0 20px #40a65c);
+    transition: 0.25s;
+    border: none;
+    margin-top: 25px;
+}
+.LuluBox:hover {
+    transform: scale(1.2);
+    border: 2px solid #40a65c;
+}
+
+.LuluHistoryBox {
+    width: 80em;
+    margin: 0 auto;
+    height: 40em;
+    background-color: white;
+    background-image: url(img/SG/TeamLux/LuluHD.jpg);
+    background-size: 100%;
+    filter: drop-shadow(0 0 20px #40a65c);
+}
+
+.LuluHistoryBox p {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 30px;
+}
+
+.teamLuxChapter2 {
+    padding: 50px;
+}
+
+.PoppyBox {
+    background-image: url(img/SG/TeamLux/PoppyCard.jpg);
+    background-size: 100%;
+    width: 450px;
+    height: 220px;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0 0 20px #1e53c7);
+    transition: 0.25s;
+    border: none;
+    margin-bottom: 25px;
+}
+.PoppyBox:hover {
+    transform: scale(1.2);
+    border: 2px solid #1e53c7;
+}
+.PoppyHistoryBox {
+    width: 80em;
+    margin: 0 auto;
+    height: 40em;
+    background-color: white;
+    background-image: url(img/SG/TeamLux/PoppyHD.jpg);
+    background-size: 100%;
+    filter: drop-shadow(0 0 20px #1e53c7);
+}
+
+.PoppyHistoryBox p {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 30px;
+}
+.JinxBox {
+    background-image: url(img/SG/TeamLux/JinxCard.jpg);
+    background-size: 100%;
+    width: 450px;
+    height: 220px;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0 0 20px #e41e41);
+    transition: 0.25s;
+    border: none;
+    margin-top: 25px;
+}
+.JinxBox:hover {
+    transform: scale(1.2);
+    border: 2px solid #e41e41;
+}
+.JinxHistoryBox {
+    width: 80em;
+    margin: 0 auto;
+    height: 40em;
+    background-color: white;
+    background-image: url(img/SG/TeamLux/JinxHD.jpg);
+    background-size: 100%;
+    filter: drop-shadow(0 0 20px #e41e41);
+}
+
+.JinxHistoryBox p {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 30px;
+}
+
+.teamXayah {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.XayahBox {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: none;
+    width: 400px;
+    height: 600px;
+    transition: 0.25s;
+    filter: drop-shadow(0 0 20px #371b41);
+    transform: skew(10deg);
+    background-image: url(img/SG/TeamXayah/XayahCard.jpg);
+}
+.XayahBox:hover {
+    transform: skew(10deg) scale(1.2);
+    margin-right: 39px;
+    border: 2px solid #371b41;
+}
+.XayahHistoryBox {
+    width: 80em;
+    margin: 0 auto;
+    height: 40em;
+    background-color: white;
+    background-image: url(img/SG/TeamXayah/XayahHD.jpg);
+    background-size: 100%;
+    filter: drop-shadow(0 0 20px #371b41);
+}
+
+.XayahHistoryBox p {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 30px;
+}
+.SennaBox {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: none;
+    width: 400px;
+    height: 600px;
+    transition: 0.25s;
+    filter: drop-shadow(0 0 20px #f756fe);
+    padding: 0;
+    transform: skew(10deg);
+    background-image: url(img/SG/TeamXayah/SennaCard.jpg);
+}
+.SennaBox:hover {
+    transform: skew(10deg) scale(1.2);
+    border: 2px solid #f756fe;
+    margin-right: 39px;
+    margin-left: 39px;
+}
+.SennaHistoryBox {
+    width: 80em;
+    margin: 0 auto;
+    height: 40em;
+    background-color: white;
+    background-image: url(img/SG/TeamXayah/SennaHD.jpg);
+    background-size: 100%;
+    filter: drop-shadow(0 0 20px #f756fe);
+}
+
+.SennaHistoryBox p {
+    text-align: center;
+    font-size: 45px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 30px;
+}
+.SeraphineBox {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: none;
+    width: 400px;
+    height: 600px;
+    transition: 0.25s;
+    filter: drop-shadow(0 0 20px #fe711f);
+    padding: 0;
+    transform: skew(10deg);
+    background-image: url(img/SG/TeamXayah/SeraphineCard.jpg);
+}
+.SeraphineBox:hover {
+    transform: skew(10deg) scale(1.2);
+    border: 2px solid #fe711f;
+    margin-right: 39px;
+    margin-left: 39px;
+}
+.SeraphineHistoryBox {
+    width: 80em;
+    margin: 0 auto;
+    height: 40em;
+    background-color: white;
+    background-image: url(img/SG/TeamXayah/SeraphineHD.jpg);
+    background-size: 100%;
+    filter: drop-shadow(0 0 20px rgb(226, 111, 18));
+}
+
+.SeraphineHistoryBox p {
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 30px;
+}
+.OriannaBox {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: none;
+    width: 400px;
+    height: 600px;
+    transition: 0.25s;
+    filter: drop-shadow(0 0 20px #75c7dc);
+    padding: 0;
+    transform: skew(10deg);
+    background-image: url(img/SG/TeamXayah/OriannaCard.jpg);
+}
+.OriannaBox:hover {
+    transform: skew(10deg) scale(1.2);
+    border: 2px solid #75c7dc;
+    margin-left: 39px;
+}
+.OriannaHistoryBox {
+    width: 80em;
+    margin: 0 auto;
+    height: 40em;
+    background-color: white;
+    background-image: url(img/SG/TeamXayah/OriannaHD.jpg);
+    background-size: 100%;
+    filter: drop-shadow(0 0 20px #75c7dc);
+}
+
+.OriannaHistoryBox p {
+    text-align: center;
+    font-size: 48px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 30px;
+}
+
+.teamKaiSa {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.KaiSaBox {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: none;
+    width: 400px;
+    height: 600px;
+    transition: 0.25s;
+    filter: drop-shadow(0 0 20px #ff81b6);
+    padding: 0;
+    background-image: url(img/SG/TeamKaiSa/KaiSaCard.jpg);
+}
+.KaiSaBox:hover {
+    transform: scale(1.2);
+    border: 2px solid #ff81b6;
+}
+.KaiSaHistoryBox {
+    width: 80em;
+    margin: 0 auto;
+    height: 40em;
+    background-color: white;
+    background-image: url(img/SG/TeamKaiSa/KaiSaHD.jpg);
+    background-size: 100%;
+    filter: drop-shadow(0 0 20px #ff81b6);
+}
+
+.is_active {
+    display: flex;
+}
+
+.KaiSaHistoryBox p {
+    text-align: center;
+    font-size: 65px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 30px;
+}
+.TeamKaiSaChapter2 {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.AkaliBox {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: none;
+    width: 450px;
+    height: 285px;
+    margin-bottom: 30px;
+    transition: 0.25s;
+    filter: drop-shadow(0 0 20px #5f36b0);
+    padding: 0;
+    background-image: url(img/SG/TeamKaiSa/AkaliCard.jpg);
+}
+.AkaliBox:hover {
+    transform: scale(1.2);
+    border: 2px solid #5f36b0;
+}
+.AkaliHistoryBox {
+    width: 80em;
+    margin: 0 auto;
+    height: 40em;
+    background-color: white;
+    background-image: url(img/SG/TeamKaiSa/AkaliHD.jpg);
+    background-size: 100%;
+    filter: drop-shadow(0 0 20px #5f36b0);
+}
+
+.AkaliHistoryBox p {
+    text-align: center;
+    font-size: 45px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 30px;
+}
+.NilahBox {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: none;
+    width: 450px;
+    height: 285px;
+    transition: 0.25s;
+    filter: drop-shadow(0 0 20px #5f36b0);
+    padding: 0;
+    background-image: url(img/SG/TeamKaiSa/NilahCard.jpg);
+}
+.NilahBox:hover {
+    transform: scale(1.2);
+    border: 2px solid #4e3e63;
+}
+.NilahHistoryBox {
+    width: 80em;
+    margin: 0 auto;
+    height: 40em;
+    background-color: white;
+    background-image: url(img/SG/TeamKaiSa/NilahHD.jpg);
+    background-size: 100%;
+    filter: drop-shadow(0 0 20px #4e3e63);
+}
+
+.NilahHistoryBox p {
+    text-align: center;
+    font-size: 46px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 30px;
+}
+.SonaBox {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: none;
+    width: 400px;
+    height: 188px;
+    margin-bottom: 21px;
+    transition: 0.25s;
+    filter: drop-shadow(0 0 20px #2baa73);
+    padding: 0;
+    background-image: url(img/SG/TeamKaiSa/SonaCard.jpg);
+}
+.SonaBox:hover {
+    transform: scale(1.2);
+    border: 2px solid #2baa73;
+}
+.SonaHistoryBox {
+    width: 80em;
+    margin: 0 auto;
+    height: 40em;
+    background-color: white;
+    background-image: url(img/SG/TeamKaiSa/SonaHD.jpg);
+    background-size: 100%;
+    filter: drop-shadow(0 0 20px #2baa73);
+}
+
+.SonaHistoryBox p {
+    text-align: center;
+    font-size: 53px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 30px;
+}
+.EkkoBox {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: none;
+    width: 400px;
+    height: 188px;
+    margin-bottom: 21px;
+    transition: 0.25s;
+    filter: drop-shadow(0 0 20px #fd5b2d);
+    padding: 0;
+    background-image: url(img/SG/TeamKaiSa/EkkoCard.jpg);
+}
+.EkkoBox:hover {
+    transform: scale(1.2);
+    border: 2px solid #fd5b2d;
+}
+.EkkoHistoryBox {
+    width: 80em;
+    margin: 0 auto;
+    height: 40em;
+    background-color: white;
+    background-image: url(img/SG/TeamKaiSa/EkkoHD.jpg);
+    background-size: 100%;
+    filter: drop-shadow(0 0 20px #fd5b2d);
+}
+
+.EkkoHistoryBox p {
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 30px;
+}
+.TaliyahBox {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: none;
+    width: 400px;
+    height: 188px;
+    transition: 0.25s;
+    filter: drop-shadow(0 0 20px #ffa6a8);
+    padding: 0;
+    background-image: url(img/SG/TeamKaiSa/TaliyahCard.jpg);
+}
+.TaliyahBox:hover {
+    transform: scale(1.2);
+    border: 2px solid #ffa6a8;
+}
+.TaliyahHistoryBox {
+    width: 80em;
+    margin: 0 auto;
+    height: 40em;
+    background-color: white;
+    background-image: url(img/SG/TeamKaiSa/TaliyahHD.jpg);
+    background-size: 100%;
+    filter: drop-shadow(0 0 20px #ffa6a8);
+}
+
+.TaliyahHistoryBox p {
+    text-align: center;
+    font-size: 47px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 30px;
+}
+
+.withoutTeam {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.GwenBox {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: none;
+    width: 350px;
+    height: 550px;
+    transition: 0.25s;
+    filter: drop-shadow(0 0 20px #aa4ad2);
+    padding: 0;
+    background-image: url(img/SG/withoutTeam/GwenCard.jpg);
+}
+.GwenBox:hover {
+    transform: scale(1.2);
+    border: 2px solid #aa4ad2;
+    margin-right: 35px;
+}
+.GwenHistoryBox {
+    width: 80em;
+    margin: 0 auto;
+    height: 40em;
+    background-color: white;
+    background-image: url(img/SG/withoutTeam/GwenHD.jpg);
+    background-size: 100%;
+    filter: drop-shadow(0 0 20px #aa4ad2);
+}
+
+.GwenHistoryBox p {
+    text-align: center;
+    font-size: 55px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 30px;
+}
+.RakanBox {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: none;
+    width: 350px;
+    height: 550px;
+    transition: 0.25s;
+    filter: drop-shadow(0 0 20px #1a4653);
+    padding: 0;
+    background-image: url(img/SG/withoutTeam/RakanCard.jpg);
+}
+.RakanBox:hover {
+    transform: scale(1.2);
+    border: 2px solid #1a4653;
+    margin-right: 35px;
+    margin-left: 35px;
+}
+.RakanHistoryBox {
+    width: 80em;
+    margin: 0 auto;
+    height: 40em;
+    background-color: white;
+    background-image: url(img/SG/withoutTeam/RakanHD.jpg);
+    background-size: 100%;
+    filter: drop-shadow(0 0 20px #1a4653);
+}
+.RakanHistoryBox p {
+    text-align: center;
+    font-size: 44px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 30px;
+}
+.RellBox {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: none;
+    width: 350px;
+    height: 550px;
+    transition: 0.25s;
+    filter: drop-shadow(0 0 20px #4722a5);
+    padding: 0;
+    background-image: url(img/SG/withoutTeam/RellCard.jpg)
+}
+.RellBox:hover {
+    transform: scale(1.2);
+    border: 2px solid #4722a5;
+    margin-right: 35px;
+    margin-left: 35px;
+}
+.RellHistoryBox {
+    width: 80em;
+    margin: 0 auto;
+    height: 40em;
+    background-color: white;
+    background-image: url(img/SG/withoutTeam/RellHD.jpg);
+    background-size: 100%;
+    filter: drop-shadow(0 0 20px #4722a5);
+}
+
+.RellHistoryBox p {
+    text-align: center;
+    font-size: 42px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 30px;
+}
+.QuinnBox {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: none;
+    width: 350px;
+    height: 550px;
+    transition: 0.25s;
+    filter: drop-shadow(0 0 20px #fc5b8d);
+    padding: 0;
+    background-image: url(img/SG/withoutTeam/QuinnCard.jpg);
+}
+
+.QuinnBox:hover {
+    transform: scale(1.2);
+    border: 2px solid #fc5b8d;
+    margin-right: 35px;
+    margin-left: 35px;
+}
+.QuinnHistoryBox {
+    width: 80em;
+    margin: 0 auto;
+    height: 40em;
+    background-color: white;
+    background-image: url(img/SG/withoutTeam/QuinnHD.jpg);
+    background-size: 100%;
+    filter: drop-shadow(0 0 20px #fc5b8d);
+}
+
+.QuinnHistoryBox p {
+    text-align: center;
+    font-size: 49px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 30px;
+}
+.NeekoBox {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: none;
+    width: 350px;
+    height: 550px;
+    transition: 0.25s;
+    filter: drop-shadow(0 0 20px rgb(253, 103, 104));
+    padding: 0;
+    background-image: url(img/SG/withoutTeam/NeekoCard.jpg);
+}
+
+.NeekoBox:hover {
+    transform: scale(1.2);
+    border: 2px solid rgb(253, 103, 104);
+    margin-left: 35px;
+}
+
+.NeekoHistoryBox {
+    width: 80em;
+    margin: 0 auto;
+    height: 40em;
+    background-color: white;
+    background-image: url(img/SG/withoutTeam/NeekoHD.jpg);
+    background-size: 100%;
+    filter: drop-shadow(0 0 20px rgb(253, 103, 104));
+}
+
+.NeekoHistoryBox p {
+    text-align: center;
+    font-size: 56px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 30px;
+}
+
+.footerBox {
+    background:  rgb(49, 43, 43);
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 23px;
+    text-align: center;
+    position: absolute;
+}
+
+.footerText {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 23px;
+    padding-top: 15px;
+}

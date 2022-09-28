@@ -1,0 +1,654 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+
+.container {
+    background-image: url('img/BackgroundA4K.jpg');
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.Header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.ButtonJewel {
+    background:none;
+    border: none;
+    padding: 0;
+}
+
+.Jewel {
+    width: 150px;
+    margin: 0 auto ;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin-top: 20px;
+    transition: 0.25s;
+}
+
+.Jewel:hover {
+    transform: scale(1.2);
+    filter:drop-shadow(0 0 20px #fbece9);
+}
+
+.GrayBox {
+    width: 100em;
+    margin: 0 auto;
+    height: 50em;
+    background:  rgba(46, 46, 46, 0.7);
+    position: absolute;
+}
+
+
+.btnClose {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    background: url(img/SVG/X.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: none;
+    transition: 0.2s;
+    left: -100px;
+}
+
+.btnClose:hover, .BtnShowImg:hover {
+    transform: scale(1.2);
+}
+
+.btnClose:before, .btnClose:after {
+    background-color: rgb(255, 255, 255);
+}
+
+.BtnShowImg {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    background: url(img/SVG/ImgIco.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: none;
+    transition: 0.2s;
+    left: -170px;
+    bottom: -100px;
+}
+
+/* Затемнение */
+.Event1History, .Event2History, .Event3History, .Event4History, .Event5History, .Event6History, .Event7History, .Event8History, .Event9History, .Event10History, .Event11History, .Event12History {
+    z-index: 50;
+    background: rgba(0, 0, 0, .7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+}
+
+.Event1Show, .Event2Show, .Event3Show , .Event4Show , .Event5Show, .Event6Show, .Event7Show, .Event8Show, .Event9Show, .Event10Show, .Event11Show, .Event12Show  {display: none;}
+
+/*Chapter 1*/
+
+.Chapter1 {
+    display: flex;
+    width: 100vw;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+/* Event 1 */
+.Event1btn {
+    width: 185px;
+    height: 185px;
+    border-radius: 100%;
+    border: none;
+    transition: 0.25s;
+    background: url(img/StoryArc/00_Start_A.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 0;
+}
+
+.Event1btn:hover {
+    transform: scale(1.2);
+    border: 2px solid rgb(95, 0, 139);
+}
+
+.Event1 p {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 18px
+}
+
+/* Окно */
+.Event1HistoryBox {
+    width: 100em;
+    margin: 0 auto;
+    height: 50em;
+    background-color: white;
+    background-image: url(img/StoryArc/00_Start.png);
+    background-size: 100%;
+    filter: drop-shadow(0 0 20px rgb(95, 0, 139));
+}
+
+.Event1HistoryBox p {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 50px;
+}
+
+
+/* Event 2 */
+.Event2btn {
+    width: 185px;
+    height: 185px;
+    border-radius: 100%;
+    border: none;
+    transition: 0.25s;
+    background: url(img/StoryArc/01_MF_Ahri_A.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 0;
+}
+
+.Event2btn:hover {
+    transform: scale(1.2);
+    border: 2px solid #efffdc;
+}
+
+
+.Event2p {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 18px;
+    max-width: 185px;
+}
+
+/* Окно */
+.Event2HistoryBox {
+    width: 100em;
+    margin: 0 auto;
+    height: 50em;
+    background-color: white;
+    background-image: url(img/StoryArc/01_MF_Ahri.jpg);
+    background-size: 100%;
+    filter: drop-shadow(0 0 20px #efffdc);
+}
+
+.Event2HistoryBox p {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 50px;
+}
+/* Event 3 */
+.Event3btn {
+    width: 185px;
+    height: 185px;
+    border-radius: 100%;
+    border: none;
+    transition: 0.25s;
+    background: url(img/StoryArc/02_SG_Lux_A.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 0;
+}
+
+.Event3btn:hover {
+    transform: scale(1.2);
+    border: 2px solid #401447;
+}
+
+.Event3p {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    max-width: 185px;
+    margin-top: 18px
+}
+
+/* Окно */
+.Event3HistoryBox {
+    width: 100em;
+    margin: 0 auto;
+    height: 50em;
+    background-color: white;
+    background-image: url(img/StoryArc/02_SG_Lux.jpg);
+    background-size: 100%;
+    filter: drop-shadow(0 0 20px #401447);
+}
+
+.Event3HistoryBox p {
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 150px;
+}
+/* Event 4 */
+.Event4btn {
+    width: 185px;
+    height: 185px;
+    border-radius: 100%;
+    border: none;
+    transition: 0.25s;
+    background: url(img/StoryArc/03_Star_Guardian_A.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 0;
+}
+
+.Event4btn:hover {
+    transform: scale(1.2);
+    border: 2px solid #c4314b;
+}
+
+.Event4p {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    max-width: 185px;
+    margin-top: 18px
+}
+.Event4HistoryBox {
+    width: 100em;
+    margin: 0 auto;
+    height: 50em;
+    background-color: white;
+    background-image: url(img/StoryArc/03_Star_Guardian_Login_Screen_Flat_Layers_\(1\).jpg);
+    background-size: 100%;
+    filter: drop-shadow(0 0 20px #c4314b);
+}
+
+.Event4HistoryBox p {
+    text-align: center;
+    font-size: 48px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 50px;
+}
+/* Event 5 */
+.Event5btn {
+    width: 185px;
+    height: 185px;
+    border-radius: 100%;
+    border: none;
+    transition: 0.25s;
+    background: url(img/StoryArc/04_New_Horizon_A.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 0;
+}
+
+.Event5btn:hover {
+    transform: scale(1.2);
+    border: 2px solid #f4d2c8;
+}
+
+.Event5p {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    max-width: 185px;
+    margin-top: 18px
+}
+.Event5HistoryBox {
+    width: 100em;
+    margin: 0 auto;
+    height: 50em;
+    background-color: white;
+    background-image: url(img/StoryArc/04_star_guardian_group.jpg);
+    background-size: 100%;
+    filter: drop-shadow(0 0 20px #f4d2c8);
+}
+
+.Event5HistoryBox p {
+    text-align: center;
+    font-size: 43px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 50px;
+}
+/*Chapter 2*/
+
+.Chapter2 {
+    display: flex;
+    width: 80vw;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-left: 200px;
+}
+
+/* Event 6 */
+.Event6btn {
+    width: 185px;
+    height: 185px;
+    border-radius: 100%;
+    border: none;
+    transition: 0.25s;
+    background: url(img/StoryArc/08_Ahri_Zoe_Neeko_A.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 0;
+}
+
+.Event6btn:hover {
+    transform: scale(1.2);
+    border: 2px solid #f4f6de;
+}
+
+.Event6p {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    max-width: 185px;
+    margin-top: 18px
+}
+.Event6HistoryBox {
+    width: 100em;
+    margin: 0 auto;
+    height: 50em;
+    background-color: white;
+    background-image: url(img/StoryArc/08_Ahri_Zoe_Neeko.png);
+    background-size: 100%;
+    filter: drop-shadow(0 0 20px #f4f6de);
+}
+
+.Event6HistoryBox p {
+    text-align: center;
+    font-size: 42px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 50px;
+}
+/* Event 7 */
+.Event7btn {
+    width: 185px;
+    height: 185px;
+    border-radius: 100%;
+    border: none;
+    transition: 0.25s;
+    background: url(img/StoryArc/07_TwilightStar_A.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 0;
+}
+
+.Event7btn:hover {
+    transform: scale(1.2);
+    border: 2px solid #d45e80;
+}
+
+.Event7p {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    max-width: 185px;
+    margin-top: 18px
+}
+.Event7HistoryBox {
+    width: 100em;
+    margin: 0 auto;
+    height: 50em;
+    background-color: white;
+    background-image: url(img/StoryArc/07_TwilightStar.jpg);
+    background-size: 100%;
+    filter: drop-shadow(0 0 20px #d45e80);
+}
+
+.Event7HistoryBox p {
+    text-align: center;
+    font-size: 55px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 50px;
+}
+/* Event 8 */
+    
+.Event8btn {
+    width: 185px;
+    height: 185px;
+    border-radius: 100%;
+    border: none;
+    transition: 0.25s;
+    background: url(img/StoryArc/06_Pajama_Party_A.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 0;
+}
+
+.Event8btn:hover {
+    transform: scale(1.2);
+    border: 2px solid #aaf8c6;
+}
+
+.Event8p {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    max-width: 185px;
+    margin-top: 18px
+}
+.Event8HistoryBox {
+    width: 100em;
+    margin: 0 auto;
+    height: 50em;
+    background-color: white;
+    background-image: url(img/StoryArc/06_Pajama_StarGuardian_Splash_Final.jpg);
+    background-size: 100%;
+    filter: drop-shadow(0 0 20px #aaf8c6);
+}
+
+.Event8HistoryBox p {
+    text-align: center;
+    font-size: 52px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 50px;
+}
+/* Event 9 */
+.Event9btn {
+    width: 185px;
+    height: 185px;
+    border-radius: 100%;
+    border: none;
+    transition: 0.25s;
+    background: url(img/StoryArc/05_StarGuardian_Story_A.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 0;
+}
+
+.Event9btn:hover {
+    transform: scale(1.2);
+    border: 2px solid #e6b3a2;
+}
+
+.Event9p {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 18px
+}
+.Event9HistoryBox {
+    width: 100em;
+    margin: 0 auto;
+    height: 50em;
+    background-color: white;
+    background-image: url(img/StoryArc/05_StarGuardian_HEADER_FINAL.jpg);
+    background-size: 100%;
+    filter: drop-shadow(0 0 20px #e6b3a2);
+}
+
+.Event9HistoryBox p {
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 50px;
+}
+/*Chapter 3*/
+
+.Chapter3 {
+    display: flex;
+    width: 60vw;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-left: 400px;
+}
+
+/* Event 10 */
+
+.Event10 {
+    justify-content: center;
+    width: 185px;
+}
+.Event10btn {
+    width: 185px;
+    height: 185px;
+    border-radius: 100%;
+    border: none;
+    transition: 0.25s;
+    background: url(img/StoryArc/09_New_Start_A.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 0;
+}
+
+.Event10btn:hover {
+    transform: scale(1.2);
+    border: 2px solid #f4cce6;
+}
+
+.Event10p {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 18px
+}
+.Event10HistoryBox {
+    width: 100em;
+    margin: 0 auto;
+    height: 50em;
+    background-color: white;
+    background-image: url(img/StoryArc/09_New_Start.png);
+    background-size: 100%;
+    filter: drop-shadow(0 0 20px #f4cce6);
+}
+
+.Event10HistoryBox p {
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 50px;
+}
+/* Event 11 */
+.Event11btn {
+    width: 185px;
+    height: 185px;
+    border-radius: 100%;
+    border: none;
+    transition: 0.25s;
+    background: url(img/StoryArc/10_New_Team_A.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 0;
+}
+
+.Event11btn:hover {
+    transform: scale(1.2);
+    border: 2px solid #ebbde1;
+}
+
+.Event11p {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 18px;
+    max-width: 185px;
+}
+.Event11HistoryBox {
+    width: 100em;
+    margin: 0 auto;
+    height: 50em;
+    background-color: white;
+    background-image: url(img/StoryArc/10_New_Team.png);
+    background-size: 100%;
+    filter: drop-shadow(0 0 20px #ebbde1);
+}
+
+.Event11HistoryBox p {
+    text-align: center;
+    font-size: 45px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 50px;
+    
+}
+/* Event 12 */
+.Event12btn {
+    width: 185px;
+    height: 185px;
+    border-radius: 100%;
+    border: none;
+    transition: 0.25s;
+    background: url(img/StoryArc/11_Next_Generation_A.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 0;
+}
+
+.Event12btn:hover {
+    transform: scale(1.2);
+    border: 2px solid #51203e;
+}
+
+.Event12p {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 18px;
+    max-width: 185px;
+}
+.Event12HistoryBox {
+    width: 100em;
+    margin: 0 auto;
+    height: 50em;
+    background-color: white;
+    background-image: url(img/StoryArc/11_Next_Generation.jpg);
+    background-size: 100%;
+    filter: drop-shadow(0 0 20px #51203e);
+}
+
+.Event12HistoryBox p {
+    text-align: center;
+    font-size: 36px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 50px;
+}

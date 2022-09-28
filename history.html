@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Хронология событий</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="history.css">
+    <link rel="icon" href="img/favicon_io/favicon-32x32.png" >
+</head>
+<body>
+    <div class="container">
+        <header class="Header">
+            <button class="ButtonJewel" onclick="goToMainPage()">
+                <img src="img/Jewejs/Jewel9.png" alt="LightJewel" class="Jewel">
+            </button>
+        </header>
+        <main>
+            <div class="Chapter1">
+                <div class="Event1">
+                    <button class="Event1btn" onclick=ShowEvent1History()></button>
+                    <p>Предисловие</p>
+                    <div class="Event1Show" id="Event1Show">
+                        <div class="Event1History">
+                            <div class="Event1HistoryBox">
+                                <div class="GrayBox" id="Event1P">
+                                    <p id="Event1P">В начале времен Первая Звезда создала Вселенную и все живое в ней. Чтобы защитить свое творение и поддержать вечный цикл жизни и смерти, Первая Звезда поделилась частицей своей сущности – звездным светом – с несколькими людьми, обладавшими железной волей и чистой душой, и таким образом сделала их защитниками вселенной на долгие века.</p>
+                                    <p id="Event1P">Эти юноши и девушки – обычные старшеклассники, их жизнь полна волнений, радости и повседневных школьных драм. А еще они противостоят силам зла, которые стремятся погрузить мир во мрак. Они – Звездные защитники! Им потребуется преодолеть сомнения и научиться полагаться на друзей, чтобы не угаснуть и не кануть во тьму.</p>
+                                    <p id="Event1P">Сильные и яркие Звездные защитники – это люди-сверхновые, изгоняющие вселенские кошмары с помощью волшебных сил. Однако у их способностей есть цена: Защитники выполняют поручение Первой Звезды и должны сражаться со злом, пока не погибнут или не погаснут.</p>
+                                </div>
+                                <button class="btnClose" onclick=ShowEvent1History()></button>
+                                <button onclick=ShowEvent1P() class="BtnShowImg"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Event2">
+                    <button class="Event2btn" onclick=ShowEvent2History()></button>
+                    <p class="Event2p">До Первого Света</p>
+                    <div class="Event2Show" id="Event2Show">
+                        <div class="Event2History">
+                            <div class="Event2HistoryBox">
+                                <div class="GrayBox" id="Event2P">
+                                    <p id="Event2P">До Люкс – первой Звездной защитницы, с которой мы познакомились – были и другие. На безжизненной луне, вдалеке от родной планеты, где находится город Валоран, Ари, Мисс Фортуна, Шая, Рэйкан и Нико дают бой Зои – одержимой жаждой убийства бывшей Звездной защитнице по прозвищу Сумеречная звезда. Защитники сражаются храбро, но терпят крах.</p>
+                                    <p id="Event2P">Шая и Рэйкан погибают, но впоследствии Зои воскрешает их, оставив под своей властью. Судьба Нико неизвестна, ее тоже считают погибшей.</p>
+                                    <p id="Event2P">Боль от этих чудовищных потерь подрывает решимость Защитников. Ари и Мисс Фортуна тяжело переживают случившееся, но они готовы по-прежнему следовать предназначению: погибнуть, защищая свет. Потеря соратников не лишает их силы духа, и вместе они намереваются собрать новую команду из "осиротевших" Защитников.</p>
+                                </div>
+                                <button class="btnClose" onclick=ShowEvent2History()></button>
+                                <button onclick=ShowEvent2P() class="BtnShowImg"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Event3">
+                    <button class="Event3btn"  onclick=ShowEvent3History()></button>
+                    <p class="Event3p">Первый Свет</p>
+                    <div class="Event3Show" id="Event3Show">
+                        <div class="Event3History">
+                            <div class="Event3HistoryBox">
+                                <div class="GrayBox" id="Event3P">
+                                    <p id="Event3P">Люкс, чей свет засиял для нас первым, становится Звездной защитницей.</p>
+                                    <p id="Event3P">Без друзей, без близких людей, связи с которыми так нужны Звездным защитникам, Люкс собирает собственную команду для борьбы с тьмой.</p>
+                                </div>
+                                <button class="btnClose" onclick=ShowEvent3History()></button>
+                                <button onclick=ShowEvent3P() class="BtnShowImg"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Event4">
+                    <button class="Event4btn"  onclick=ShowEvent4History()></button>
+                    <p class="Event4p">Burning Bright</p>
+                    <div class="Event4Show" id="Event4Show">
+                        <div class="Event4History">
+                            <div class="Event4HistoryBox">
+                                <div class="GrayBox" id="Event4P">
+                                    <p id="Event4P">Люкс заручается помощью других Защитниц: Джинкс, Лулу, Жанны и Поппи. Самой Люкс приходится совмещать жизнь обычной школьницы и предводительницы Звездных защитниц.</p>
+                                    <p id="Event4P">Люкс изо всех сил старается поддержать новых Защитниц, но Джинкс, не справившись с огромной нагрузкой, уходит из команды. В этот тяжелый момент на город нападает чудовище.</p>
+                                    <p id="Event4P">Разобщенной команде недостает сил для победы, но, когда свет почти меркнет, Джинкс возвращается. Собрав всю силу любви и дружбы, Защитники снова действуют сообща и побеждают тьму. Дружба Люкс и Джинкс, а также остальных девушек в команде, становится еще крепче.</p>
+                                </div>
+                                <button class="btnClose" onclick=ShowEvent4History()></button>
+                                <button onclick=ShowEvent4P() class="BtnShowImg"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Event5">
+                    <button class="Event5btn"  onclick=ShowEvent5History()></button>
+                    <p class="Event5p">Новый горизонт</p>
+                    <div class="Event5Show" id="Event5Show">
+                        <div class="Event5History">
+                            <div class="Event5HistoryBox">
+                                <div class="GrayBox" id="Event5P">
+                                    <p id="Event5P">Люкс и ее команда – не единственные Звездные защитники во вселенной. Немало приключений выпало на долю Ари и ее команды из космоса.</p>
+                                    <p id="Event5P">Подобно Люкс и ее друзьям, Ари, Мисс Фортуна, Синдра, Эзреаль и Сорака были избраны, чтобы объединить силы, сражаться и погибнуть, защищая Первую Звезду.</p>
+                                    <p id="Event5P">Но если Люкс по-прежнему стремится исполнить свое предназначение, Ари в нем разочаровалась. Трое ее бывших соратников погибли, защищая свет, и Ари намеревается переменить судьбу, которая неминуемо ведет Защитников к гибели.</p>
+                                    <p id="Event5P">Для Ари было бы невыносимо больно снова потерять друзей – и она решает не допустить этого.</p>
+                                </div>
+                                <button class="btnClose" onclick=ShowEvent5History()></button>
+                                <button onclick=ShowEvent5P() class="BtnShowImg"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Chapter2">
+                <div class="Event9">
+                    <button class="Event9btn" onclick=ShowEvent9History()></button>
+                    <p class="Event9p">Звездопад</p>
+                    <div class="Event9Show" id="Event9Show">
+                        <div class="Event9History">
+                            <div class="Event9HistoryBox">
+                                <div class="GrayBox" id="Event9P">
+                                    <p id="Event9P">Зловещие сны и перспектива стать свидетелями метеоритного дождя приводят обе команды Звездных защитников в лагерь "Таргон", где между ними тут же возникают трения.</p>
+                                    <p id="Event9P">Однако о разногласиях приходится забыть, когда на лагерь нападают твари из бездны. Защитники вместе дают им отпор.</p>
+                                    <p id="Event9P">После победы Люкс ожидает, что объединенных для борьбы с тьмой Звездных защитников возглавит Ари, но та непреклонна: ей не хочется повторения истории. Поэтому Люкс приходится взять командование на себя.</p>
+                                </div>
+                                <button class="btnClose" onclick=ShowEvent9History()></button>
+                                <button onclick=ShowEvent9P() class="BtnShowImg"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Event8">
+                    <button class="Event8btn" onclick=ShowEvent8History()></button>
+                    <p class="Event8p">Пижамная вечеринка</p>
+                    <div class="Event8Show" id="Event8Show">
+                        <div class="Event8History">
+                            <div class="Event8HistoryBox">
+                                <div class="GrayBox" id="Event8P">
+                                    <p id="Event8P">Люкс ищет способы подружить две команды и приглашает их на Пижамную вечеринку. Все сразу идет наперекосяк, потому что Мисс Фортуна, Эзреаль и Сорака ожидали деловой встречи, а в разгар посиделок в комнате открывается межпространственный портал.</p>
+                                    <p id="Event8P">В нервном напряжении после испорченного вечера Мисс Фортуна и Люкс наконец находят общий язык. Первая все еще оплакивает свою первую команду, вторая с трудом переносит бремя лидерства.</p>
+                                    <p id="Event8P">Хоть на первый взгляд вечеринка не задалась, Звездных защитников она все же сближает.</p>
+                                </div>
+                                <button class="btnClose" onclick=ShowEvent8History()></button>
+                                <button onclick=ShowEvent8P() class="BtnShowImg"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Event7">
+                    <button class="Event7btn" onclick=ShowEvent7History()></button>
+                    <p class="Event7p">Сумеречная звезда</p>
+                    <div class="Event7Show" id="Event7Show">
+                        <div class="Event7History">
+                            <div class="Event7HistoryBox">
+                                <div class="GrayBox" id="Event7P">
+                                    <p id="Event7P">Мисс Фортуна признается Люкс, что потеряла свою первую команду. Девушки обсуждают, что значит быть лидером и какое будущее ждет Звездных защитников.</p>
+                                    <p id="Event7P">В это время Зои – древняя сущность, угрожающая Защитникам по всей Вселенной – находит дорогу в Валоран.</p>
+                                    <p id="Event7P">Героям придется защищать от Сумеречной звезды свой город, его жителей и друг друга – а вдобавок пройти испытание на доверие и преданность команде.</p>
+                                </div>
+                                <button class="btnClose" onclick=ShowEvent7History()></button>
+                                <button onclick=ShowEvent7P() class="BtnShowImg"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Event6">
+                    <button class="Event6btn" onclick=ShowEvent6History()></button>
+                    <p class="Event6p">Свет и тень</p>
+                    <div class="Event6Show" id="Event6Show">
+                        <div class="Event6History">
+                            <div class="Event6HistoryBox">
+                                <div class="GrayBox" id="Event6P">
+                                    <p id="Event6P">Где-то в глубинах космоса за Нико по пятам следуют Шая и Рэйкан – двое бывших Звездных защитников, которых Зои уничтожила, а затем воскресила, подчинив своей власти.</p>
+                                    <p id="Event6P">Нико удается отбиться от Шаи и ослабить ее, но Рэйкан исцеляет напарницу, и вдвоем они продолжают преследовать Нико, чтобы отдать ее Зои.</p>
+                                    <p id="Event6P">В конечном итоге с помощью магии хаоса Зои этой троице удается загнать Нико в угол, используя ее сомнения и страхи. Однако Нико не успевает кануть во тьму: за миг до этого появляется Ари и спасает бывшую соратницу. Звездные защитники всегда прикроют друг другу спину!</p>
+                                    <p id="Event6P">Появление Ари ознаменовало начала реванш против Зои, но на сей раз Ари не была готова отступить, а тем более кого-то потреять.</p>
+                                </div>
+                                <button class="btnClose" onclick=ShowEvent6History()></button>
+                                <button onclick=ShowEvent6P() class="BtnShowImg"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="Chapter3">
+                <div class="Event10">
+                    <button class="Event10btn" onclick=ShowEvent10History()></button>
+                    <p class="Event10p">Реванш</p>
+                    <div class="Event10Show" id="Event10Show">
+                        <div class="Event10History">
+                            <div class="Event10HistoryBox">
+                                <div class="GrayBox" id="Event10P">
+                                    <p id="Event10P">За ожесточённой схваткой между Сумеречной звездой вместе с бывшими товарищами против действующих защитников наблюдал весь Валоран.</p>
+                                    <p id="Event10P">Безумие и могущество Зои было настолько велико, что даже объединившие силы защитников не могли дать ей отпор. Выждав подходящий момент, не поддавшийся под чары Зои Рэйкан ринулся прямиком к порталу, который открылся за спиной Зои, тем самым отбросив её в неизвестную часть космоса, ценною своей жизни...</p>
+                                    <p id="Event10P">Победа в схватке была одержана, но цена за неё была велика, наполовину разрушенный город, потерянный товарищ и смятение в сердце одной будущей защитницы.</p>
+                                </div>
+                                <button class="btnClose" onclick=ShowEvent10History()></button>
+                                <button onclick=ShowEvent10P() class="BtnShowImg"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Event11">
+                    <button class="Event11btn" onclick=ShowEvent11History()></button>
+                    <p class="Event11p">Новое поколение</p>
+                    <div class="Event11Show" id="Event11Show">
+                        <div class="Event11History">
+                            <div class="Event11HistoryBox">
+                                <div class="GrayBox" id="Event11P">
+                                    <p id="Event11P">После схватки с Сумеречной Звездой город был восстановлен, но защитники пропали с глаз жителей, многие начали думать об их исчезновении.</p>
+                                    <p id="Event11P">В скором зародилось новое поколение Звёздных Защитников - под предводительством Кай`Сы собрались Акали, Сона, Экко и Талия. Но стать командой было крайне непросто, дружба лучших подруг - Кай`Сы и Акали, подверглась испытанию на крепкость. </p>
+                                    <p id="Event11P">Кай`Са, ведомая желанием быть похожей на своего героя - Люкс, совсем не обращала внимание на страхи своей лучшей подруги. А Акали, видя полное пренебрежение к своим страхам, начала избегать не только Кай`Су, но и команду в целом. С каждым днём страх погаснуть в ней рос, а в один из дней чудище из далёкой галактики начал охоту на гаснущую звезду.</p>
+                                </div>
+                                <button class="btnClose" onclick=ShowEvent11History()></button>
+                                <button onclick=ShowEvent11P() class="BtnShowImg"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Event12">
+                    <button class="Event12btn" onclick=ShowEvent12History()></button>
+                    <p class="Event12p">Битва против общего врага</p>
+                    <div class="Event12Show" id="Event12Show">
+                        <div class="Event12History">
+                            <div class="Event12HistoryBox">
+                                <div class="GrayBox" id="Event12P">
+                                    <p id="Event12P">Вместе с чудищем объявился ещё один противник - Моргана, чьё могущество было крайне велико. Но Моргана была не только сильна, но и хитра. Она пыталась склонить Акали на свою сторону, обещая той, что она никогда не погаснет.</p>
+                                    <p id="Event12P">После первой встречи с Морганой ждал ещё один неприятный сюрприз - Зои нашла путь из далёкого космоса обратно в Валоран, но вместе с ней была её бывшая напарницы - Синдра, чьи мотивы не известны и по сей день, но явились они не сражения ради, они предложили объединить усилия для сражения чудища, которое охотилось на защитников. </p>
+                                    <p id="Event12P">Объединив силы они напали на Фидлстикса и Моргану. Позволил Зои бушевать во всю они смогли победить чудище из космоса, которым оказалась их бывшая напарница и по совместительству лучшая подруга Зои - Харп.</p>
+                                    <p id="Event12P">Акали, которая якобы перешла на сторону Морганы, оказалась двойным агентом, благодаря чему они смогли удивить Моргану и совместными усилиями с Кай`Сой одержать верх. Моргана отступила, но обещала вернуться, как и Зои, которая получила напоминание, почему она решила убивать защитников...</p>
+                                </div>
+                                <button class="btnClose" onclick=ShowEvent12History()></button>
+                                <button onclick=ShowEvent12P() class="BtnShowImg"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+    </div>
+        </footer>
+    <script src="sc.js"></script>
+</body>
+</html>

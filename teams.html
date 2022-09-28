@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="teams.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="icon" href="img/favicon_io/favicon-32x32.png" >
+    <meta charset="UTF-8">
+    <title>Команды</title>
+</head>
+<body>
+    <div class="container">
+            <header class="header">
+                <button  class="Jewel" onclick="goToMainPage()">
+                    <img src="img/Jewejs/Jewel6.png" alt="Jewel" class="JewelSet">
+                </button>
+                <nav>
+                    <ul class="nav">
+                        <li><a href="#" class="tabs active" id="tab">Команда Ари</a></li>
+                        <li><a href="#" class="tabs" id="tab">Команда Люкс</a></li>
+                        <li><a href="#" class="tabs" id="tab">Команда Шаи</a></li>
+                        <li><a href="#" class="tabs" id="tab">Команда Кай`Сы</a></li>
+                        <li><a href="#" class="tabs" id="tab">Защитники без команды</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <div class="displayFlex">
+                    <div class="tab hide is_active" id="TabSlide" data-name="TeamAhri">
+                         <div class="TeamAhri">
+                            <div class="Ahri">
+                                <button class="AhriBox" onclick=ShowAhriHistory()></button>
+                                <div class="AhriShow" id="AhriShow">
+                                    <div class="AhrisHistory">
+                                        <div class="AhriHistoryBox">
+                                            <div class="GrayBox" id="AhriBio">
+                                                <p id="AhriBio">Ари – капитан команды, состоящей как из опытных, так и из новеньких Звездных защитниц, прибывших из дальних пределов Вселенной. Ей уже пришлось испытать горечь боевых потерь, и потому она ревностно охраняет свою ''семью'', чтобы свет тех, о ком она заботится, никогда больше не погас. Прошлое также повлияло на ее отношение к другим командам и их капитанам, особенно таким неопытным, как Люкс. В ее Вселенной отныне нет места терпению или пониманию. Тем не менее вряд ли кто-то сможет устоять перед очарованием Ари.</p>
+                                            </div>
+                                            <button class="btnAhriBox" onclick=ShowAhriHistory()></button>
+                                            <button onclick=ShowAhriBio() class="ShowAhriBio"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="TeamAhriChapter1"> 
+                                <div class="MissFortune">
+                                    <button class="MFBox" onclick=ShowMFHistory()></button>
+                                    <div class="MFShow" id="MFShow">
+                                        <div class="MFHistory">
+                                            <div class="MFHistoryBox">
+                                                <div class="GrayBox" id="MFBio">
+                                                    <p id="MFBio">Мисс Фортуна – из начальной команды Ари – вспыльчивый стрелок, она известна по всей Галактике как безжалостная убийца монстров. Потеряв своих прежних товарищей, помощница капитана теперь сражается во имя их памяти – не из чувства долга, а из желания отомстить, поскольку не может забыть о прошлом. Она всегда кидается в бой первой, часто не беспокоясь о своей безопасности – лишь бы сразить всех чудищ поблизости. Из-за своего горячего нрава иногда ссорится с товарищами, которые, как она считает, часто занимаются ерундой, вместо того чтобы убивать врагов. Но несмотря на такое презрительное к ним отношение, единственная, с кем Мисс Фортуна держится поистине холодно, это Синдра, которая, по ее мнению, вернулась с далеко не благородными намерениями.</p>
+                                                </div>
+                                                <button class="btnAhriBox" onclick=ShowMFHistory()></button>
+                                                <button onclick=ShowMFBio() class="ShowAhriBio"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Syndra">
+                                    <button class="SyndraBox" onclick=ShowSyndraHistory()></button>
+                                    <div class="SyndraShow" id="SyndraShow">
+                                        <div class="SyndraHistory">
+                                            <div class="SyndraHistoryBox">
+                                                <div class="GrayBox" id="SyndraBio">
+                                                    <p id="SyndraBio">Синдра – внушающая страх и уважение Звездная защитница прежнего призыва. Ее история, как и история Жанны, сокрыта туманом таинственности, но ясно как день, что эта честолюбивая воительница не станет иметь дело ни с кем, кто, по ее мнению, не стоит ее времени. Сейчас она исполняет роль советчицы команды Ари, помогая ей справиться с непредвиденными опасностями на пути к многообещающему будущему. Несмотря на то что Ари ей доверяет, кое-кто ставит под сомнение мотивы ветерана и подозревает, что Синдра готова на все ради достижения своих личных целей.</p>
+                                                </div>
+                                                <button class="btnAhriBox" onclick=ShowSyndraHistory()></button>
+                                                <button onclick=ShowSyndraBio() class="ShowAhriBio"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="TeamAhriChapter2">
+                                <div class="Soraka">
+                                    <button class="SorakaBox" onclick=ShowSorakaHistory()></button>
+                                    <div class="SorakaInfo"></div>
+                                    <div class="SorakaShow" id="SorakaShow">
+                                        <div class="SorakaHistory">
+                                            <div class="SorakaHistoryBox">
+                                                <div class="GrayBox" id="SorakaBio">
+                                                    <p id="SorakaBio">Сорака – существо загадочного происхождения с благородной душой, защищающее команду в опасных заданиях с удаленных от передовой позиций. Несмотря на свой хрупкий внешний вид, она обладает неимоверной целительной мощью, равной которой нет ни у одной другой защитницы. Ее уникальные способности и стремление ставить потребности других выше своих собственных заслужили уважение остальных; но скромная и застенчивая Сорака лишь смиренно утверждает, что просто выполняет свои обязанности. Как и Лулу, она поддерживает особую связь со Звездным светом, хотя и не понимает его истинной природы, как этого не понимают и другие члены команды.</p>
+                                                </div>
+                                                <button class="btnAhriBox" onclick=ShowSorakaHistory()></button>
+                                                <button onclick=ShowSorakaBio() class="ShowAhriBio"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Ezreal">
+                                    <button class="EzrealBox"  onclick=ShowEzrealHistory()></button>
+                                    <div class="EzrealShow" id="EzrealShow">
+                                        <div class="EzrealHistory">
+                                            <div class="EzrealHistoryBox">
+                                                <div class="GrayBox" id="EzrealBio">
+                                                    <p id="EzrealBio">Эзреаль отличался безграничным любопытством еще до того, как его пробудила Первая звезда, а после того, как он стал Звездным защитником, его тяга к открытиям только усилилась. Теперь вся Вселенная для него – открытая карта, а звезды – миры, ожидающие своего первооткрывателя. Он новичок в команде, и его бьющая через край энергия может как вдохновлять, так и раздражать товарищей. Эзреаль предпочитает не задумываться об огромной ответственности, лежащей на плечах Звездного защитника, предпочитая просто раскрывать очередные тайны Галактики. Во время путешествий он иногда отлучался из отряда без предупреждения, но всегда возвращался, когда бывал нужен. В настоящее время его внимание захватила некая розововолосая защитница из другой команды...</p>
+                                                </div>
+                                                <button class="btnAhriBox" onclick=ShowEzrealHistory()></button>
+                                                <button onclick=ShowEzrealBio() class="ShowAhriBio"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab hide" id="TabSlide" data-name="TeamLuxe">
+                        <div class="teamLuxe">
+                            <div class="teamLuxChapter1">
+                                <div class="Janna">
+                                    <button class="JannaBox" onclick=ShowJannaHistory()></button>
+                                    <div class="JannaShow" id="JannaShow">
+                                        <div class="JannaHistory">
+                                            <div class="JannaHistoryBox">
+                                                <div class="GrayBox" id="JannaBio">
+                                                    <p id="JannaBio">Жанна – ветеран среди Звездных защитниц, она обучает молодую и впечатлительную Люкс. Опытная защитница редко рассказывает о своем загадочном прошлом и часто погружается в мысли о другом месте и о другом времени. Неразговорчивая Жанна – самый мудрый член своей команды, помогающий своим товаркам осознать их истинное предназначение. Другие восхищаются сдержанностью и сокрытой силой Жанны; перед ее авторитетом не может устоять даже Джинкс.</p>
+                                                </div>
+                                                <button class="btnAhriBox" onclick=ShowJannaHistory()></button>
+                                                <button onclick=ShowJannaBio() class="ShowAhriBio"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Lulu">
+                                    <button class="LuluBox" onclick=ShowLuluHistory()></button>
+                                    <div class="LuluShow" id="LuluShow">
+                                        <div class="LuluHistory">
+                                            <div class="LuluHistoryBox">
+                                                <div class="GrayBox" id="LuluBio">
+                                                    <p id="LuluBio">Лулу – самая младшая в команде – немного странная, но очень одаренная ученица второго класса старшей школы Валоран. Ее уникальная связь со Звездным светом, источником силы каждой Звездной защитницы, позволяет ей общаться с ним, как с близким другом. Самое интересное для Лулу – это ее внутренний мир, а все остальное ее мало трогает. Из-за ее увлечения Звездным светом может иногда показаться, что она не совсем понимает всю лежащую на ней ответственность. Некоторых членов команды своевольное поведение Лулу ставит в тупик, но они принимают ее со всеми странностями. В конце концов, Лулу всегда может поддержать своих подруг, а также дать им понять, что их поддерживает свет.</p>
+                                                </div>
+                                                <button class="btnAhriBox" onclick=ShowLuluHistory()></button>
+                                                <button onclick=ShowLuluBio() class="ShowAhriBio"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Lux">
+                                <button class="LuxBox" onclick=ShowLuxHistory()></button>
+                                <div class="LuxShow" id="LuxShow">
+                                    <div class="LuxHistory">
+                                        <div class="LuxHistoryBox">
+                                            <div class="GrayBox" id="LuxBio">
+                                                <p id="LuxBio">Жизнерадостная, смелая и слегка неуклюжая Люкс – капитан команды Звездных защитниц и самая яркая среди них. Пусть она немного неопытна по сравнению с такими, как Жанна, но ее юношеский оптимизм внушает всем уверенность на таком нелегком – но, по ее мнению, очень увлекательном – пути. Люкс искренне предана делу защиты Вселенной, хотя, возможно, и не понимает всей серьезности этой задачи. Ей предстоит пройти еще немало испытаний, прежде чем стать сильным лидером, достойным призыва Первой звезды. Пока же Люкс уверена, что если они сражаются вместе, то сумеют побороть любую тьму.</p>
+                                            </div>
+                                            <button class="btnAhriBox" onclick=ShowLuxHistory()></button>
+                                            <button onclick=ShowLuxBio() class="ShowAhriBio"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="teamLuxChapter2">
+                                <div class="Poppy">
+                                    <button class="PoppyBox" onclick=ShowPoppyHistory()></button>
+                                    <div class="PoppyShow" id="PoppyShow">
+                                        <div class="PoppyHistory">
+                                            <div class="PoppyHistoryBox">
+                                                <div class="GrayBox" id="PoppyBio">
+                                                    <p id="PoppyBio">Никто не относится к своим обязанностям Звездной защитницы столь серьезно, как Поппи. Эта свирепая воительница с еще более свирепым характером методично размахивает своим молотом и бросает хмурый взгляд на любую Звездную защитницу, которая смеет усомниться в призыве Первой звезды (а в случае Джинкс – и насмехаться над ним). Себя она героем вовсе не считает, однако зачастую оказывается в первых рядах сражения, всегда готовая исполнить свой долг. Ее трезвый и практичный склад мышления помогает команде собраться, особенно в минуты растерянности. Для Поппи все во Вселенной либо черное, либо белое: ты либо разбиваешь в пух и прах все, что угрожает космосу, либо получаешь по голове.</p>
+                                                </div>
+                                                <button class="btnAhriBox" onclick=ShowPoppyHistory()></button>
+                                                <button onclick=ShowPoppyBio() class="ShowAhriBio"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Jinx">
+                                    <button class="JinxBox" onclick=ShowJinxHistory()></button>
+                                    <div class="JinxShow" id="JinxShow">
+                                        <div class="JinxHistory">
+                                            <div class="JinxHistoryBox">
+                                                <div class="GrayBox" id="JinxBio">
+                                                    <p id="JinxBio">Есть Защитницы, которые очень серьезно относятся к своей обязанности охранять Вселенную... а есть Джинкс. Когда Первая звезда наделила ее силой Звездного света, Джинкс поначалу восприняла это как типичный подросток – с вызовом и нежеланием относиться к своим силам иначе, как к забавной игрушке, существующей исключительно ради развлечения. Ее себялюбие часто служит причиной столкновения с другими членами команды, которые не понимают, как Защитницей могла стать такая своеобразная личность. Пусть Джинкс и с насмешкой относится к идее служить миру, но она верит своей подруге детства Люкс, а если кто-то и сможет заглянуть Джинкс в душу, он увидит там ненасытную потребность любой ценой защищать тех, кто ей дорог.</p>
+                                                </div>
+                                                <button class="btnAhriBox" onclick=ShowJinxHistory()></button>
+                                                <button onclick=ShowJinxBio() class="ShowAhriBio"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab hide"  id="TabSlide" data-name="TeamXayah">
+                        <div class="teamXayah">
+                            <div class="Xayah">
+                                <button class="XayahBox" onclick=ShowXayahHistory()></button>
+                                <div class="XayahShow" id="XayahShow">
+                                    <div class="XayahHistory">
+                                        <div class="XayahHistoryBox">
+                                            <div class="GrayBox" id="XayahBio">
+                                                <p id="XayahBio">Шая провела много лет во тьме после того, как бывший командир и соратники бросили ее на произвол судьбы. Все это время она вынашивала планы мести, но в глубине души просто хотела понять, почему Ари оставила их с Рэйканом умирать. Она выслеживала бывших друзей по всей галактике, пока во время битвы с Сумеречной звездой Рэйкан не пожертвовал собственным светом, чтобы очистить душу Шаи от тьмы. Теперь она снова стала Звездной защитницей и ищет в ночном небе своего любимого в надежде отдать долг и вернуть Рэйкана к свету. Но сперва ей придется побороть тьму, которая все еще бушует в сердце. Действиями Шаи движет любовь, хотя сама она ни за что не признается в подобной сентиментальности.</p>
+                                            </div>
+                                            <button class="btnAhriBox" onclick=ShowXayahHistory()></button>
+                                            <button onclick=ShowXayahBio() class="ShowAhriBio"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Senna">
+                                <button class="SennaBox" onclick=ShowSennaHistory()></button>
+                                <div class="SennaShow" id="SennaShow">
+                                    <div class="SennaHistory">
+                                        <div class="SennaHistoryBox">
+                                            <div class="GrayBox" id="SennaBio">
+                                                <p id="SennaBio">Долгие годы Сенна боролась с тьмой в одиночку, и эта борьба закалила характер Защитницы, а также научила ее подавлять эмоции. В конце концов, каждый Звездный защитник знает, что ему неизбежно придется терять любимых. Но все же суровая Сенна вовсе не бесчувственна: читать романтическую мангу ей нравится ничуть не меньше, чем ликвидировать межпространственные угрозы. Сенна единственная из Защитников достаточно сильна, чтобы управляться с огромным ружьем. А еще при необходимости она может призвать к порядку собственных союзников. Только не ждите от нее разговоров по душам.</p>
+                                            </div>
+                                            <button class="btnAhriBox" onclick=ShowSennaHistory()></button>
+                                            <button onclick=ShowSennaBio() class="ShowAhriBio"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Seraphine">
+                                <button class="SeraphineBox" onclick=ShowSeraphineHistory()></button>
+                                <div class="SeraphineShow" id="SeraphineShow">
+                                    <div class="SeraphineHistory">
+                                        <div class="SeraphineHistoryBox">
+                                            <div class="GrayBox" id="SeraphineBio">
+                                                <p id="SeraphineBio">Набирающая галактическую популярность поп-звезда Серафина всегда согласна на новый коллаб со Звездными защитниками. Более суровым бойцам может не понравиться то, как Серафина фонтанирует позитивом (и блесточками), но даже они не смогут устоять перед гармонией ее песен. В свободное от защиты вселенной время девушка наверняка потащит друзей в караоке, надеясь найти в списке песен свои собственные.</p>
+                                            </div>
+                                            <button class="btnAhriBox" onclick=ShowSeraphineHistory()></button>
+                                            <button onclick=ShowSeraphineBio() class="ShowAhriBio"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Orianna">
+                                <button class="OriannaBox" onclick=ShowOriannaHistory()></button>
+                                <div class="OriannaShow" id="OriannaShow">
+                                    <div class="OriannaHistory">
+                                        <div class="OriannaHistoryBox">
+                                            <div class="GrayBox" id="OriannaBio">
+                                                <p id="OriannaBio">Девочка-робот попросила Первую Звезду исполнить ее самое заветное желание, и та сделала ее человеком. Вместе с даром пришла и ответственность, но Орианна с радостью взяла на себя обязанности Звездной защитницы. Она жадно впитывает любую новую информацию: ей хочется узнать всю мировую историю и попробовать леденцы со всеми возможными вкусами. Главным ее открытием стало искусство танца. С каждым днем у Орианны все лучше получается повторять ритмы песен завораживающими движениями тела.</p>
+                                            </div>
+                                            <button class="btnAhriBox" onclick=ShowOriannaHistory()></button>
+                                            <button onclick=ShowOriannaBio() class="ShowAhriBio"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab hide " id="TabSlide" data-name="TeamKaiSa">
+                        <div class="teamKaiSa">
+                            <div class="TeamKaiSaChapter1">
+                                <div class="Sona">
+                                    <button class="SonaBox" onclick=ShowSonaHistory()></button>
+                                    <div class="SonaShow" id="SonaShow">
+                                        <div class="SonaHistory">
+                                            <div class="SonaHistoryBox">
+                                                <div class="GrayBox" id="SonaBio">
+                                                    <p id="SonaBio">Добрая и задумчивая Сона нема от рождения и предпочитает тишину и одиночество. В толпе ей очень неуютно, поэтому она не любит бывать в местах большого скопления людей… ну разве что в костюме Звездной защитницы. В море голосов Сона старается найти собственную песню. Она управляет мощной силой музыки, и каждая новая мелодия становится частью великой оперы о победе света над тьмой.</p>
+                                                </div>
+                                                <button class="btnAhriBox" onclick=ShowSonaHistory()></button>
+                                                <button onclick=ShowSonaBio() class="ShowAhriBio"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Ekko">
+                                    <button class="EkkoBox" onclick=ShowEkkoHistory()></button>
+                                    <div class="EkkoShow" id="EkkoShow">
+                                        <div class="EkkoHistory">
+                                            <div class="EkkoHistoryBox">
+                                                <div class="GrayBox" id="EkkoBio">
+                                                    <p id="EkkoBio">Экко всегда был помешан на технике и конструировании сложных механизмов, а после встречи с Первой Звездой получил способность отматывать время назад… но не так далеко, как ему хотелось бы. Упрямый, верный и уверенный в своих силах, он испытывает на космических монстрах свои способности, чтобы еще на шаг приблизиться к созданию идеальной машины времени и отправиться с ее помощью в далекое прошлое и спасти нечто очень важное.</p>
+                                                </div>
+                                                <button class="btnAhriBox" onclick=ShowEkkoHistory()></button>
+                                                <button onclick=ShowEkkoBio() class="ShowAhriBio"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Taliyah">
+                                    <button class="TaliyahBox" onclick=ShowTaliyahHistory()></button>
+                                    <div class="TaliyahShow" id="TaliyahShow">
+                                        <div class="TaliyahHistory">
+                                            <div class="TaliyahHistoryBox">
+                                                <div class="GrayBox" id="TaliyahBio">
+                                                    <p id="TaliyahBio">Талия еще не разобралась, кто она и кем хочет стать в будущем. Талия мучилась от этой неопределенности задолго до того, как дала клятву Звездной защитницы, и теперь ей приходится сочетать поиски себя со сражениями против чудовищ, способных разрушать города. Стоит этой школьной тихоне надеть костюм Звездной защитницы, как она превращается в смелого бойца, который не боится говорить то, что думает. Талии предстоит многое узнать о себе… и научиться удерживать равновесие, пролетая над городом на гигантской волне звездного света.</p>
+                                                </div>
+                                                <button class="btnAhriBox" onclick=ShowTaliyahHistory()></button>
+                                                <button onclick=ShowTaliyahBio() class="ShowAhriBio"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="TeamKaiSaChapter2">
+                                <div class="Akali">
+                                    <button class="AkaliBox" onclick=ShowAkaliHistory()></button>
+                                    <div class="AkaliShow" id="AkaliShow">
+                                        <div class="AkaliHistory">
+                                            <div class="AkaliHistoryBox">
+                                                <div class="GrayBox" id="AkaliBio">
+                                                    <p id="AkaliBio">Акали – общительная девушка, которая выросла в большом городе и хорошо знает законы улиц. Появление Звездных защитников и разрушительные последствия битвы с Сумеречной звездой перевернули жизнь Акали с ног на голову. Дав клятву вместе со своей лучшей подругой Кай'Сой, она теперь сражается с врагами Первой Звезды, используя богатый арсенал оружия Звездных защитников и собственные отточенные рефлексы. Сможет ли дружба заглушить голос сомнений, или Акали станет первой погасшей Защитницей из этой команды?</p>
+                                                </div>
+                                                <button class="btnAhriBox" onclick=ShowAkaliHistory()></button>
+                                                <button onclick=ShowAkaliBio() class="ShowAhriBio"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>   
+                                <div class="Nilah">
+                                    <button class="NilahBox"onclick=ShowNilahHistory()></button>
+                                    <div class="NilahShow" id="NilahShow">
+                                        <div class="NilahHistory">
+                                            <div class="NilahHistoryBox">
+                                                <div class="GrayBox" id="NilahBio">
+                                                    <p id="NilahBio">Весь космос знает о Ниле, которая с неистребимой радостью уничтожает врагов размером с целые планеты. Она временно отложила свои обязанности по защите безбрежных просторов вселенной, чтобы помочь победить Моргану, поскольку обещала Люкс обучить новую команду юных героев и немного присмотреть за ними. Она рассказывает этим наивным новобранцам о великих победах и легендарных противниках… а еще о том, что на самом деле означает клятва Звездных защитников, и как не унывать, даже когда шансов на победу мало.</p>
+                                                </div>
+                                                <button class="btnAhriBox" onclick=ShowNilahHistory()></button>
+                                                <button onclick=ShowNilahBio() class="ShowAhriBio"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="KaiSa">
+                                <button class="KaiSaBox" onclick=ShowKaiSaHistory()></button>
+                                <div class="KaiSaShow" id="KaiSaShow">
+                                    <div class="KaiSaHistory">
+                                        <div class="KaiSaHistoryBox">
+                                            <div class="GrayBox" id="KaiSaBio">
+                                                <p id="KaiSaBio">Кай'Са – прирожденный лидер и защитница слабых. Возможно, она слишком идеализирует Звездных защитников и их ценности, забывая при этом о собственной подруге, но в сердце Кай'Сы горит желание помогать людям, и она сделает все, чтобы защитить мир от тьмы.</p>
+                                            </div>
+                                            <button class="btnAhriBox" onclick=ShowKaiSaHistory()></button>
+                                            <button onclick=ShowKaiSaBio() class="ShowAhriBio"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab hide" id="TabSlide" data-name="WithoutTeam">
+                        <div class="withoutTeam">
+                            <div class="Gwen">
+                                <button class="GwenBox" onclick=ShowGwenHistory()></button>
+                                <div class="GwenShow" id="GwenShow">
+                                    <div class="GwenHistory">
+                                        <div class="GwenHistoryBox">
+                                            <div class="GrayBox" id="GwenBio">
+                                                <p id="GwenBio">Тысячи лет назад Гвен была одной из первых Звездных защитниц в истории. Но в один ужасный день она потеряла своих соратниц: Харп превратилась в чудовище, а Зои от горя и ярости впала в опасное безумие. Сама Гвен была превращена в куклу, провела в таком состоянии несколько тысячелетий и даже не знает, что стало со Звездными защитниками.</p>
+                                            </div>
+                                            <button class="btnAhriBox" onclick=ShowGwenHistory()></button>
+                                            <button onclick=ShowGwenBio() class="ShowAhriBio"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Rakan">
+                                <button class="RakanBox" onclick=ShowRakanHistory()></button>
+                                <div class="RakanShow" id="RakanShow">
+                                    <div class="RakanHistory">
+                                        <div class="RakanHistoryBox">
+                                            <div class="GrayBox" id="RakanBio">
+                                                <p id="RakanBio">Даже под темным влиянием Зои Рэйкан не перестал любить Шаю. Преследуя бывших союзников по всей вселенной вместе с возлюбленной, одержимой жаждой мести, он одновременно пытался придумать, как очистить сердце Шаи от тьмы. В конце концов ему это удалось – ценой собственного рассудка. Рэйкан еще глубже провалился в вихрящееся измерение хаоса и разрушения. Теперь убитая горем Шая отчаянно пытается вернуть любимого к свету. У Рэйкана же другие планы, а именно – отрепетировать злодейские речи и найти себе хорошего барбера. Настолько крутые баки сами собой не появляются!</p>
+                                            </div>
+                                            <button class="btnAhriBox" onclick=ShowRakanHistory()></button>
+                                            <button onclick=ShowRakanBio() class="ShowAhriBio"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Rell">
+                                <button class="RellBox" onclick=ShowRellHistory()></button>
+                                <div class="RellShow" id="RellShow">
+                                    <div class="RellHistory">
+                                        <div class="RellHistoryBox">
+                                            <div class="GrayBox" id="RellBio">
+                                                <p id="RellBio">Релл родилась в очень влиятельной семье с хорошими связями. Отец с матерью строго контролировали ее жизнь, готовя к политической карьере, а девочка чувствовала себя одинокой и не могла завести друзей. В конце концов Релл взбунтовалась против родителей и школы, попечителями которой они были, и получила желанную независимость… а также незаслуженную репутацию хулиганки и билет в один конец в старшую школу Валорана. Чтобы избежать разочарований, Релл научилась никого к себе не подпускать, но под этой непробиваемой броней скрывается талантливая и верная Звездная защитница, всегда готовая защищать мир от тьмы.</p>
+                                            </div>
+                                            <button class="btnAhriBox" onclick=ShowRellHistory()></button>
+                                            <button onclick=ShowRellBio() class="ShowAhriBio"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Quinn">
+                                <button class="QuinnBox" onclick=ShowQuinnHistory()></button>
+                                <div class="QuinnShow" id="QuinnShow">
+                                    <div class="QuinnHistory">
+                                        <div class="QuinnHistoryBox">
+                                            <div class="GrayBox" id="QuinnBio">
+                                                <p id="QuinnBio">Прибывшие из другого города Звездная защитница Квинн и ее фамильяр Вэлор всегда неразлучны. Вместе им легче справляться с ответственностью, ведь на них возложены надежды жителей родного города. Дальновидность, специализация на разведке и хорошее понимание партизанской тактики чрезвычайно полезны при защите горожан от монстров. Однако Квинн понадобится некоторое время, чтобы подружиться со своими новыми, полными энтузиазма соратниками.</p>
+                                            </div>
+                                            <button class="btnAhriBox" onclick=ShowQuinnHistory()></button>
+                                            <button onclick=ShowQuinnBio() class="ShowAhriBio"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Neeko">
+                                <button class="NeekoBox" onclick=ShowNeekoHistory()>></button>
+                                <div class="NeekoShow" id="NeekoShow">
+                                    <div class="NeekoHistory">
+                                        <div class="NeekoHistoryBox">
+                                            <div class="GrayBox" id="NeekoBio">
+                                                <p id="NeekoBio">Нико входила в первоначальную команду Звездных защитников под руководством Ари, но сбежала, увидев, как темная магия Зои убивает ее союзников. Нико тоже посчитали погибшей, но перед самой главной битвой она явилась к новой группе Звездных защитников. И на этот раз наивная искательница приключений поклялась, что не сбежит.</p>
+                                            </div>
+                                            <button class="btnAhriBox" onclick=ShowNeekoHistory()></button>
+                                            <button onclick=ShowNeekoBio() class="ShowAhriBio"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer class="footerBox">
+                <p class="footerText">Created by ShadowCherry</p>
+            </footer>
+        <script src="sc.js"></script>
+    </div>
+</body>
+</html>

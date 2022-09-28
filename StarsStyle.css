@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+
+.container {
+    background-image: url('img/Background.jpg');
+    width: 99vw;
+    height: 260vh;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+.backgorund {
+    text-align: center;
+}
+
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0 30px 0;
+}
+
+
+.jewels {
+    align-items: center;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.Jewel {
+    width: 150px;
+    height: 150px;
+    transition: 0.3s;
+    background-size: 100%;
+}
+.Jewel:hover {
+    filter: drop-shadow(0 0 30px #4b48ef);
+    transform: scale(1.2);
+}
+
+.InfoAboutStars {
+    display: flex;
+}
+
+.BoxIAS {
+    width: 1600px;
+    height: 430px;
+    background: linear-gradient(#fd8355 0%, #f0576c 37%, #f79cbd 100%);
+    opacity: .8;
+    border: 3px solid #f0576c;
+    filter: drop-shadow(0 0 50px black);
+    margin: 0 auto;
+}
+
+.BoxForText {
+    position: absolute;
+}
+
+.TextIAS {
+    width: 1600px;
+    font-size: 40px;
+    text-align: center;
+    margin: 30px 0 0 145px;
+    color: white;
+}
+
+.firstStar {
+    max-width: 1750px;
+}
+
+.firstStarH1 {
+    margin: 50px 0 50px 150px;
+    font-size: 70px;
+    border-style: none;
+    background: none;
+    color: white;
+    text-align: center;
+    filter: drop-shadow(0 0 1px black);
+}
+
+.firstStarPhoto {
+    width: 400px;
+    margin-left: 150px;
+    border: 1px solid pink;
+    filter: drop-shadow(0 0 20px pink);
+}
+
+.boxFS {
+    display: flex;
+}
+
+.FSBox {
+    width: 1200px;
+    height: 300px;
+    margin-top: 30px;
+    background: linear-gradient(
+        90deg,
+        rgb(231, 174, 131, .7) 25%,
+        rgb(240, 124, 245, .7) 50%,
+        rgb(246, 52, 122, .7) 75%,
+        rgb(72, 20, 58, .7) 100%
+    );
+    text-align: center;
+    filter: drop-shadow(0 0 10px pink);
+}
+
+.firstStarText {
+    margin-top: 25px;
+    font-size: 35px;
+    color: white;
+    filter: drop-shadow(0 0 1px black);
+}
+
+.twilightStarH1 {
+    font-size: 70px;
+    background: none;
+    color: white;
+    text-align: center;
+    margin: 100px 0 0 150px;
+    filter: drop-shadow(0 0 1px black);
+}
+
+.twilightStarPhoto {
+    width: 400px;
+    height: 360px;
+    border: 2px solid rgb(83, 12, 124);
+    filter: drop-shadow(0 0 20px rgb(83, 12, 124));
+}
+
+.twilightStarMainInfo {
+    display: flex;
+    margin-top: 50px;
+    margin-left: 150px;
+}
+
+.boxText {
+    width: 1200px;
+    height: 300px;
+    margin-top: 30px;
+    background: linear-gradient(270deg, rgb(186, 142, 211, .7) 0%, rgb(175, 115, 211, .7) 33%, rgb(159, 55, 219, .7)  66%, rgb(83, 12, 219, .7) 100%);
+    border-style: none;
+    text-align: center;
+    filter: drop-shadow(0 0 15px rgb(83, 12, 124));
+    border: 2px solid  rgb(83, 12, 124);
+    border-left: 0px;
+}
+
+.twilightStarText {
+    font-size: 35px;
+    color:white;
+    margin-top: 25px;
+    filter: drop-shadow(0 0 1px black);
+}
+
+.twilightStarMainAdditional {
+    display: flex;
+    margin-top: 50px;
+}
+
+.twilightStarMainAdditionalBox {
+    display: flex;
+}
+
+.TSMAIT {
+    margin-left: 175px;
+    width: 350px;
+    height: 200px;
+    background: linear-gradient(0deg, rgb(186, 142, 211, .7) 0%, rgb(175, 115, 211, .7) 33%, rgb(159, 55, 219, .7)  66%, rgb(83, 12, 219, .7) 100%);
+    border: 1px solid  rgb(83, 12, 124);
+    filter: drop-shadow(0 0 15px rgb(83, 12, 124));
+}
+
+.twilightStarMainAdditionalInfoText {
+    color: white;
+    font-size: 20px;
+    margin: 15px 0 0 10px;
+    filter: drop-shadow(0 0 1px black);
+}
+
+.twilightStarMainAdditionalInfoBox1{
+    width: 1100px;
+    height: 150px;
+    margin-top: -32px;
+    margin-left: 75px; 
+    background: linear-gradient(320deg, rgb(186, 142, 211, .7) 0%, rgb(175, 115, 211, .7) 33%, rgb(159, 55, 219, .7)  66%, rgb(83, 12, 219, .7) 100%);
+    border: 2px solid  rgb(83, 12, 124);
+    border-top: 0px;
+    filter: drop-shadow(0 0 15px rgb(83, 12, 124));
+}
+
+.twilightStarMainAdditionalInfo {
+    width: 1050px;
+    margin: 25px 0 0 15px;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+
+.joyfulStarH1 {
+    margin-left: 150px;
+    font-size: 70px;
+    border-style: none;
+    background: none;
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+    filter: drop-shadow(0 0 1px black);
+}
+
+.jofulStarBox {
+    display: flex;
+    margin-left: 150px;
+}
+
+.joyfulStarPhoto {
+    width: 400px;
+    height: 360px;
+    background: linear-gradient(0deg, rgb(254, 218, 140, .7) 0%, rgb(250, 83, 225, .7)  50%, rgb(74, 46, 60, .7) 100%);
+    border: 2px solid rgb(254, 218, 140);
+    filter: drop-shadow(0 0 20px rgb(254, 218, 140));
+    background-size: 100%;
+}
+
+.joyfulStarBoxText {
+    width: 1200px;
+    height: 300px;
+    margin-top: 30px;
+    background: linear-gradient(270deg, rgb(254, 218, 140, .7) 0%, rgb(250, 83, 225, .7)  50%, rgb(74, 46, 60, .7) 100%);
+    border-style: none;
+    text-align: center;
+    filter: drop-shadow(0 0 15px rgb(254, 218, 140));
+    border: 2px solid  rgb(254, 218, 140);
+    border-left: 0px;
+}
+
+.joyfulStarText {
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top:40px;
+    filter: drop-shadow(0 0 1px black);
+}
+
+.footerBox {
+    background:  rgb(49, 43, 43);
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 23px;
+    text-align: center;
+    position: absolute;
+}
+
+.footerText {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 23px;
+    padding-top: 15px;
+}
