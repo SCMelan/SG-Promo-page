@@ -1,10 +1,10 @@
 
 function starspage () {
-   document.location.assign('/stars.html')
+   document.location.assign('stars.html')
 }
 
 function goToMainPage () {
-    document.location.assign('/index.html')
+    document.location.assign('index.html')
 }
 
 function reload () {
@@ -12,15 +12,15 @@ function reload () {
 }
 
 function goToEnemys () {
-    document.location.assign('/enemys.html')
+    document.location.assign('enemys.html')
 }
 
 function goToTeams () {
-    document.location.assign('/teams.html')
+    document.location.assign('teams.html')
 }
 
 function goToHistory () {
-    document.location.assign('/history.html')
+    document.location.assign('history.html')
 }
 
 let a = 1
