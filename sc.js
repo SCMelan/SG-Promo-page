@@ -20,7 +20,7 @@ function goToTeams () {
 }
 
 function goToHistory () {
-    document.location.assign('history.html')
+    document.location.assign('SG-Promo-page/history.html')
 }
 
 let a = 1
